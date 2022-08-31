@@ -26,35 +26,7 @@ Articulo::~Articulo(){}
 // coloca aqui los métodos 
 /////////////////////////////////////////
 
-int Articulo::getId()
-{
-  return this->id;
-}
 
-float Articulo::getPrecio()
-{
-  return this->precio;
-}
-
-float Articulo::getCantidad()
-{
-  return this->cantidad;
-}
-
-void Articulo::setId(int id)
-{
-  this->id = id;
-}
-
-void Articulo::setPrecio(float precio)
-{
-  this->precio = precio;
-}
-
-void Articulo::setCantidad(float cantidad)
-{
-  this->cantidad = cantidad;
-}
 
 std::string Articulo::toString()
 {
@@ -71,6 +43,4 @@ void Articulo::imprimirArticulo(){
 // Es importante seguir el orden para mostrar los atributos, asi como el formato señalado
 // Sólo se debe imprimir un artículo cuyo valor en su atributo cantidad sea mayor a cero
 
-  if (this->cantidad > 0)
-    std::cout << toString() << "\n";
 }

@@ -4,8 +4,6 @@
 
 int main()
 {
-  CarritoCompra carrito1, carrito2;
-
   // Construye un objeto carrito1 a partir de la clase CarritoCompra
   carrito1.seleccionaArticulos();
   carrito1.imprimeCarrito();

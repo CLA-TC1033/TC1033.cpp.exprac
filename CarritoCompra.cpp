@@ -20,14 +20,6 @@ CarritoCompra::CarritoCompra() {
         // para artículos con ID impar, el precio sera id * 20
    // ASIGNA cero al atributo cantidad de todos los artículos
 
-    for (auto i=1; i< MAX; i++) {
-      articulos[i]=Articulo();
-      articulos[i].setId(i);
-      if (i % 2 == 0) 
-        articulos[i].setPrecio(i * 10);
-      else
-        articulos[i].setPrecio(i * 20);
-    }
   }
 
 
@@ -43,13 +35,7 @@ std::string CarritoCompra::getFechaCompra(){
   return fechaCompra;
 }
 
-int CarritoCompra::getTotalArticulos(){
-  return this->totalArticulos;
-}
 
-float CarritoCompra::getTotalCompra() {
-  return this->totalCompra;
-}
 
 // COMPLETA en esta sección los métodos setters faltantes
 
@@ -59,16 +45,6 @@ void CarritoCompra::setTotalArticulos(int _totalArticulos){
 
 void CarritoCompra::setTotalCompra(float _totalCompra){
   totalCompra = _totalCompra;
-}
-
-void CarritoCompra::setFechaCompra(std::string _fechaCompra)
-{
-  this->fechaCompra=_fechaCompra;
-}
-
-void CarritoCompra::setNombreTienda(std::string _nombreTienda)
-{
-  this->nombreTienda=_nombreTienda;
 }
 
 Articulo& CarritoCompra::getArticulo(int i) {
@@ -92,32 +68,7 @@ void CarritoCompra::seleccionaArticulos(){
         // Calcula el monto de la compra, multiplicando el precio del articulo por la cantidad
         // Acumula la compra calculada con la compra total del carrito
         // Acumula la cantidad del artículo con la cantidad total de artículos del carrito
-  int id;
-  float cantidad;
-  float st{0};
-  
-  while (true) {
-    std::cin >> cantidad >> id;
-
-    if (cantidad == 0)
-      break;
-
-    if (cantidad < 0) {
-      std::cout << "La cantidad debe ser positiva ..." << "\n";
-    }
-    else {
-        if (id < 1 || id > 10) {
-          std::cout << "El Id debe estar entre 1 y 10" << "\n";
-        }
-        else {
-           getArticulo(id).setCantidad(cantidad);
-
-            st = cantidad * getArticulo(id).getPrecio();
-            totalArticulos += cantidad;
-            totalCompra += st;
-        }
-    }
-  }
+ 
 }
 
 void CarritoCompra::imprimeCarrito(){
@@ -126,10 +77,7 @@ void CarritoCompra::imprimeCarrito(){
   std::cout << "Articulos: " << std::endl;
     // COMPLETA esta parte
     // UTILIZA el método imprimirArticulo de la clase Articulo para imprimir todos los artículos del carrito
-  for (auto i=1;i<MAX; i++)
-  {
-    getArticulo(i).imprimirArticulo();
-  }
+  
 
   std::cout << "Total articulos: " << totalArticulos << " Total compra: $ " << totalCompra << std::endl;
 }
