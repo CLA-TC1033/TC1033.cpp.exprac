@@ -1,0 +1,8 @@
+{
+	"extensions": [
+		"llvm-vs-code-extensions.vscode-clangd",
+		"vadimcn.vscode-lldb",
+		"tomoki1207.pdf"
+	]
+
+}
