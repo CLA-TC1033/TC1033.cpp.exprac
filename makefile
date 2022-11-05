@@ -20,3 +20,5 @@ debug:
 	rm -f dexercise
 debugvs:
 	g++ *.cpp -g -o build/dexercise
+debugtest: 
+	g++ -fsanitize=address --std=c++17 test/tests.cpp student.cpp -g -o build/dexercise
