@@ -27,7 +27,7 @@ Articulo::~Articulo(){}
 /////////////////////////////////////////
 
 
-
+// no modifiques
 std::string Articulo::toString()
 {
   std::string scantidad{std::to_string(this->getCantidad())};
