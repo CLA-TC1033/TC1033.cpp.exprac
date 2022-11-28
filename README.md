@@ -2,7 +2,7 @@
 
 ## Descripción del Problema
 
-Crea la clase ```Artículo``` de acuerdo con los comentarios que se encuentran en el archivo ```Articulo.hpp```.Completa la clase ```CarritoCompra``` de acuerdo con los comentarios en el archivo ```CarritoCompra.hpp```. Completa el programa principal de acuerdo con los comentarios en el archivo ```exercise.cpp```.
+Completa la clase ```Artículo``` de acuerdo con los comentarios que se encuentran en el archivo ```Articulo.hpp```.Completa la clase ```CarritoCompra``` de acuerdo con los comentarios en el archivo ```CarritoCompra.hpp```. Completa el programa principal de acuerdo con los comentarios en el archivo ```exercise.cpp```.
 
 ## Ejemplo de ejecución
 
