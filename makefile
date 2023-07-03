@@ -1,7 +1,7 @@
 all: clean test
 
 appTests: test/tests.cpp 
-	g++ -fsanitize=address --std=c++17 test/tests.cpp Articulo.cpp CarritoCompra.cpp -o build/appTests
+	g++ -Wall --std=c++17 test/tests.cpp test/catch_amalgamated.cpp Articulo.cpp CarritoCompra.cpp -o build/appTests
 
 test: appTests
 	# executes all tests
@@ -10,6 +10,7 @@ test: appTests
 clean:
 	rm -f build/appTests
 	rm -f build/exercise
+	rm -f build/dexercise
 run:
 	g++ *.cpp -o build/exercise
 	clear
@@ -21,4 +22,4 @@ debug:
 debugvs:
 	g++ *.cpp -g -o build/dexercise
 debugtest: 
-	g++ -fsanitize=address --std=c++17 test/tests.cpp Articulo.cpp CarritoCompra.cpp -g -o build/dexercise
+	g++ -Wall --std=c++17 test/tests.cpp test/catch_amalgamated.cpp Articulo.cpp CarritoCompra.cpp -g -o build/dexercise
