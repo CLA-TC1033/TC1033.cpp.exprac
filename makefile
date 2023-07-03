@@ -13,7 +13,6 @@ clean:
 	rm -f build/dexercise
 run:
 	g++ *.cpp -o build/exercise
-	clear
 	./build/exercise
 debug: 
 	g++ *.cpp -g -o dexercise
