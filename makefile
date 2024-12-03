@@ -1,24 +1,19 @@
 all: clean test
 
-appTests: test/tests.cpp 
-	g++ -Wall --std=c++17 test/tests.cpp test/catch_amalgamated.cpp Articulo.cpp CarritoCompra.cpp -o build/appTests
+appTests: 
+	cd build && cmake -DTEST_EXECUTABLE=ON .. && cmake --build .
 
 test: appTests
-	# executes all tests
-	./build/appTests
-
+	clear && ./build/appTests && cd ..
 clean:
-	rm -f build/appTests
-	rm -f build/exercise
-	rm -f build/dexercise
+	find build -mindepth 1 ! -name 'README.txt' -delete && clear
 run:
-	g++ *.cpp -o build/exercise
-	./build/exercise
+	cd build && cmake -DMAIN_EXECUTABLE=ON .. && cmake --build . && clear && ./exercise && cd ..
 debug: 
-	g++ *.cpp -g -o dexercise
-	gdb dexercise
-	rm -f dexercise
+	cd build && cmake -DVISUAL_STUDIO_DEBUG_NORMAL=ON .. && cmake --build . && clear && cd ..
+	gdb build/dexercise
+	clear
 debugvs:
-	g++ *.cpp -g -o build/dexercise
+	cd build && cmake -DVISUAL_STUDIO_DEBUG_NORMAL=ON .. && cmake --build . && clear && echo "Lista la compilación para depuración. Abra el programa principal e inicie la depuración de pruebas de VS Code..." && cd ..
 debugtest: 
-	g++ -Wall --std=c++17 test/tests.cpp test/catch_amalgamated.cpp Articulo.cpp CarritoCompra.cpp -g -o build/dexercise
+	cd build && cmake -DVISUAL_STUDIO_DEBUG_TEST=ON .. && cmake --build . && clear && echo "Lista la compilación para depuración de pruebas con VS Code. Abra el programa principal e inicie la depuración de pruebas de VS Code..." && cd ..
