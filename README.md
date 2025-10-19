@@ -66,6 +66,18 @@ Revisa la aplicación de cada uno de los estándares de codificación. Si se cum
 5. Verifica que pasa todas las pruebas.
 6. Empuja tu programación a GitHub.
 
+## Aplicación de estándares de codificación con IA
+
+1. Abre GitHub Copilot (`Ctrl+Alt+I`).
+2. Coloca como contexto el/los `<archivo.cpp/hpp>`(s) a aplicar los estándares de programación. 
+4. Usa el siguiente *prompt*:
+```
+/app-std
+```
+4. Verifica los cambios sugeridos y edita/confirma aquéllos que consideres convenientes.
+5. Verifica que pasa todas las pruebas y que el programa principal se ejecuta correctamente.
+6. Empuja tu programación a GitHub.
+
 ## Objetivo
 
 - Busca que el código pase correctamente todas las pruebas
