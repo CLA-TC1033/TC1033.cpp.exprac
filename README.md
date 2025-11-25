@@ -119,6 +119,8 @@ Explicación de los otros archivos:
 - Comando para limpieza de binarios `make clean`
     * Úselo cuando desee eliminar cualquier binario que se haya generado en la carpeta `build`.
     * Úselo cuando detecte que algún binario no está actualizado o bien no se hubiere construido conrrectamente.
+- Comando para empujar cambios al Autograding: `make push`
+    * Si hay cambios nuevos en la programación, los envía al Autograding. En caso contrario, no los envía (señala que no los hay y no empuja nada).
 
 ## Instrucciones para construir y ejecutar la aplicación y pruebas usando CMake
 
