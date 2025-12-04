@@ -46,7 +46,7 @@ Para generar automáticamente el Diagrama de Clases a partir de los archivos de 
 1. Localice la extensión `mermAID` del lado izquierdo de la barra de herramientas. Dé clic sobre ella.
 2. Dé clic sobre el ícono `Continue in Chat` para iniciar una sesión de `mermAId` en el Chat de Copilot.
 3. Arrastre los archivos `.cpp` y `.hpp` que desea diagramar del Explorador de Archivos a la caja de diálogo del Chat de Copilot. Este será el contexto de la IA para usar mermAID.
-4. Captura el siguiente prompt:
+4. Seleccione el modo `Ask` y el modelo `GPT4.1`. Capture el siguiente prompt:
 
 ```
 @mermaid /uml
