@@ -55,7 +55,14 @@ Para generar automáticamente el Diagrama de Clases a partir de los archivos de 
    
 ## Diagrama de clases UML con draw.io
 
-El repositorio está configurado para crear Diagramas de clases UML con ```draw.io```. Para usarlo simplemente das doble clic en el archivo  ```uml.class.drawio.png``` y se activará el editor ```draw.io``` incrustado en ```VSCode``` para edición. Asegúrate de agregar las formas UML en el menú de formas del lado izquierdo (opción ```+Más formas```). Al final insertas el archivo ```uml.class.drawio.png``` en apartado de UML de este archivo README.
+El repositorio está configurado para crear Diagramas de clases UML con ```draw.io```. Para usarlo, sigue estos pasos:
+
+1. Localiza el archivo ```uml.class.drawio.png``` en el explorador de archivos.
+2. Da doble clic sobre el archivo ```uml.class.drawio.png``` para abrir el editor ```draw.io``` incrustado en ```VSCode```.
+3. Agrega las formas UML necesarias desde el menú de formas del lado izquierdo (selecciona la opción ```+Más formas```).
+4. Crea tu diagrama de clases UML utilizando las formas agregadas.
+5. Guarda los cambios en el archivo ```uml.class.drawio.png```.
+6. Inserta el archivo ```uml.class.drawio.png``` en el apartado de UML de este archivo README.
 
 Para más información consulta el [MarketPlace](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio).
 
