@@ -138,7 +138,9 @@ Explicación de los otros archivos:
     * Úselo cuando detecte que algún binario no está actualizado o bien no se hubiere construido conrrectamente.
 - Comando para empujar cambios al Autograding: `make push`
     * Si hay cambios nuevos en la programación, los envía al Autograding. En caso contrario, no los envía (señala que no los hay y no empuja nada).
-
+- Comando para sincronizar cambios entre GitHub y Codespaces: `make pullpush`
+    * Si hay cambios en GitHub así como en Codespaces (Flechas de cambios en ambos sentidos) este comando incorpora los cambios de GitHub en Codespaces y luego empuja los cambios de Codespaces a Github.
+    
 ## Instrucciones para construir y ejecutar la aplicación y pruebas usando CMake
 
 1. Entrar al directorio de construcción:
