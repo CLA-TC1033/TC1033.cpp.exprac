@@ -22,4 +22,4 @@ ctest: appTests
 push:clean
 	git add . && git commit -m "Listo el avance" && git push origin main
 pullpush:clean
-	git pull --rebase origin main && git commit -m "Sincronizado los cambios. Listo el avance" && git push origin main
+	git pull --rebase origin main && git add . && git commit -m "Sincronizado los cambios. Listo el avance" && git push origin main
