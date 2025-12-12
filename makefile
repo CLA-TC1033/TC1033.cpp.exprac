@@ -1,3 +1,5 @@
+.PHONY: all appTests test clean run debug debugvs debugtest ctest push pullpush
+
 all: clean test
 
 appTests: 
